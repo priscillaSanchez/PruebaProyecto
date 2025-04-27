@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Prisutería Accesorios</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+ <!-- Favicons -->
+ <link href="Imagenes/Logo/LogoPrisuteria.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="CSS/main.css" rel="stylesheet">
+  <link href="CSS/diseño.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="Imagenes/Logo/LogoPrisuteria.png" class="logo">
+        <h1 class="sitename">Prisutería Accesorios</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" >Inicio</a></li>
+          <li><a href="acerca.html"> Acerca de Nosotros </a></li> <!--Historia, Servicios y Galería- Acerca del Sitio-->
+          <li><a href="tienda.html">Tienda</a></li>
+          <li class="dropdown"><a href="#"><span>Sobre la Pagina</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class=""><a href="autores.html"><span>Autores</span> </a>
+              </li>
+            </ul>
+          </li>
+          <li >
+            <a href="contacto.html" class="ubicacion">
+              <img src="Imagenes/Iconos/IconoUbicacion.png" alt="Ubicación" >
+            </a>
+          </li>
+          
+          <li>
+            <a href="compra.html" class="bolsaCompras" style="position: relative;">
+              <img src="Imagenes/Iconos/BolsaCompras.png" alt="Bolsa de Compras" />
+              <span id="contadorCarrito" style="
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                background:  #f36198;
+                color: white;
+                border-radius: 50%;
+                padding: 2px 6px;
+                font-size: 12px;
+                display: none;
+              ">0</span>
+            </a>
+          </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+  <main class="main">
+
+
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(Imagenes/Fotos/FondoTienda.png);">
+      <div class="container position-relative">
+        <h1>Tienda</h1>
+        <p>¡Descubre nuestra colección de accesorios únicos! 🛍️
+          Explora una variedad de piezas con estilo, diseñadas para resaltar tu personalidad y complementar tu look. 💎 Desde elegantes detalles hasta creaciones llenas de creatividad, aquí encontrarás el accesorio perfecto para cada ocasión. ¡Haz que tu estilo brille! ✨
+          
+           </p>
+       
+      </div>
+    </div><!-- End Page Title -->
+
+    <div id="mensajeExito" style="
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f36198;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    z-index: 9999;
+    font-size: 1.2rem;
+    text-align: center;
+  ">
+    Producto agregado a la bolsa 👜
+  </div>
+  
+    <div id="carritoVista" class="carrito-vista">
+
+    <section id="listaAccesorios">
+      <!-- Sección Joyería -->
+      <section id="JoyeriaTienda" class="seccion-categoria">
+        <div class="container-tienda">
+          <h2 class="text-center mb-5">Joyeria 💎</h2>
+          <div class="productos-grid">
+            <!-- Producto 1 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/JoyeriaAretesCorazon.png" alt="Aretes Corazón Dorado Plateado">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Aretes Corazón Dorado Plateado</h2>
+                <p class="product-description">Elegancia y estilo en una pieza encantadora. Perfectos para toda ocasión.</p>
+                <p class="product-price">₡5.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 2 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Collares/JoyeriaCollarGirasol.png" alt="Collar Girasol Giratorio">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Collar Girasol Giratorio</h2>
+                <p class="product-description">Con baño de oro y diseño giratorio, este collar es una joya única.</p>
+                <p class="product-price">₡10.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/JoyeriaPulseraTrebol.png" alt="Pulsera Trébol Negro">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Trébol Negro</h2>
+                <p class="product-description">Un diseño de buena suerte con acabado dorado delicado.</p>
+                <p class="product-price">₡8.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 4 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/JoyeriaLazoChispa.png" alt="Aretes lazo chispita plateados">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Aretes lazo chispita plateados</h2>
+                <p class="product-description">Elegancia y estilo en una pieza encantadora. Perfectos para toda ocasión.</p>
+                <p class="product-price">₡6.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 5 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Collares/JoyeriaCollarCorazonChispa.png" alt="Collar Corazon Chispa">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Collar Corazon Chispa dorado acero</h2>
+                <p class="product-description">Un diseño único para que puedas realzar tu belleza con este collar.</p>
+                <p class="product-price">₡7.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 6 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/JoyeriaPulseraTrebolRoja.png" alt="Pulsera trebol roja">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Trebol rojo con baño de oro</h2>
+                <p class="product-description">Un diseño de buena suerte con acabado dorado delicado.</p>
+                <p class="product-price">₡8.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 7 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/JoyeriaAretesTrebolNegro.png" alt="Aretes trebol negra">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Aretes Trebol negro</h2>
+                <p class="product-description">Un diseño de buena suerte con acabado dorado delicado.</p>
+                <p class="product-price">₡6.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 8 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/JoyeriaAretesTrebolRojo.png" alt="Aretes trebol roja">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Aretes Trebol rojo</h2>
+                <p class="product-description">Un diseño de buena suerte con acabado dorado delicado.</p>
+                <p class="product-price">₡6.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 9 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Collares/JoyeriaCollarFloresChispa.png" alt="Collar Flores Chispa">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Collar Flor chispa con baño de oro acero</h2>
+                <p class="product-description">Un diseño único para que puedas realzar tu belleza con este collar.</p>
+                <p class="product-price">₡7.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 10 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/ArgollasGrandesDoradasJoyeria.png" alt="Argollas Doradas Grandes">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Argollas con baño de oro acero</h2>
+                <p class="product-description">Un diseño único para que puedas realzar tu belleza con estas argollas.</p>
+                <p class="product-price">₡5.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+             <!-- Producto 11 -->
+             <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/AretesGotaDoradasJoyeria.png" alt="Aretes Gota Doradas Grandes">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Aretes Gota </h2>
+                <p class="product-description">Un diseño único para que puedas realzar tu belleza con estos aretes.</p>
+                <p class="product-price">₡6.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 12 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/ArgollasMedianasdoradasJoyeria.png" alt="Argollas Doradas Medianas">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Argollas con baño de oro acero</h2>
+                <p class="product-description">Un diseño único para que puedas realzar tu belleza con estas argollas.</p>
+                <p class="product-price">₡5.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    
+    
+      <!-- Sección Aretes -->
+      <section id="AretesTienda" class="seccion-categoria">
+        <div class="container-tienda">
+          <h2 class="text-center mb-5">Aretes✨</h2>
+          <div class="productos-grid">
+            <!-- Producto 1 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/JoyeriaAretesCorazon.png" alt="Aretes Corazón Dorado Plateado">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Aretes Corazón Dorado Plateado</h2>
+                <p class="product-description">Elegancia y estilo en una pieza encantadora. Perfectos para toda ocasión.</p>
+                <p class="product-price">₡5.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 2 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/JoyeriaLazoChispa.png" alt="Aretes lazo chispita plateados">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Aretes lazo chispita plateados</h2>
+                <p class="product-description">Elegancia y estilo en una pieza encantadora. Perfectos para toda ocasión.</p>
+                <p class="product-price">₡6.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/JoyeriaAretesTrebolNegro.png" alt="Aretes trebol negra">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Aretes Trebol negro</h2>
+                <p class="product-description">Un diseño de buena suerte con acabado dorado delicado.</p>
+                <p class="product-price">₡6.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 4 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/JoyeriaAretesTrebolRojo.png" alt="Aretes trebol roja">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Aretes Trebol rojo</h2>
+                <p class="product-description">Un diseño de buena suerte con acabado dorado delicado.</p>
+                <p class="product-price">₡6.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 5 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/Arete angel 1_20240605_190007_0000.jpg" alt="Aretes Angel Blancos">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Aretes Angel Blancos</h2>
+                <p class="product-description">Un diseño único para que puedas realzar tu belleza con este collar.</p>
+                <p class="product-price">₡3.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+             <!-- Producto 6 -->
+             <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/ArgollasGrandesDoradasJoyeria.png" alt="Argollas Doradas Grandes">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Argollas con baño de oro acero</h2>
+                <p class="product-description">Un diseño único para que puedas realzar tu belleza con estas argollas.</p>
+                <p class="product-price">₡5.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+             <!-- Producto 7 -->
+            
+             <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/AretesGotaDoradasJoyeria.png" alt="Aretes Gota Doradas Grandes">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Aretes Gota </h2>
+                <p class="product-description">Un diseño único para que puedas realzar tu belleza con estos aretes.</p>
+                <p class="product-price">₡6.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+             <!-- Producto 8 -->
+             <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/ArgollasMedianasdoradasJoyeria.png" alt="Argollas Doradas Medianas">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Argollas con baño de oro acero</h2>
+                <p class="product-description">Un diseño único para que puedas realzar tu belleza con estas argollas.</p>
+                <p class="product-price">₡5.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 9 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/AreteRosaOro.jpg" alt="Aretes  Rosa">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Argollas Chispa  Rosado</h2>
+                <p class="product-description">Un diseño único para que puedas realzar tu belleza con estas argollas chic.</p>
+                <p class="product-price">₡6.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+             <!-- Producto 10 -->
+             <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/aretes mariposa_20240605_190002_0000.jpg" alt="Aretes  Mariposa Azul">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Aretes Mariposa Azul Brillitos</h2>
+                <p class="product-description">Un diseño único para que puedas realzar tu belleza con estos aretes chic.</p>
+                <p class="product-price">₡2.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+             <!-- Producto 11 -->
+             <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/Aretes_Mariquita.jpg" alt="Aretes Mariquita">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Aretes Mariquita</h2>
+                <p class="product-description">Un diseño único para que puedas realzar tu belleza con estos aretes artesanales.</p>
+                <p class="product-price">₡2.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+             <!-- Producto 12 -->
+             <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/Aretes_tortugaRoja.jpg" alt="Aretes Tortuga Rojita">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Aretes Tortuga Rijita</h2>
+                <p class="product-description">Un diseño único para que puedas realzar tu belleza con estos aretes artesanales.</p>
+                <p class="product-price">₡2.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+             
+            <!-- Producto 13 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Aretes/Arete1Perla.jpg" alt="Aretes Perla Redonda Natural">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Arete Perla Redonda Natural</h2>
+                <p class="product-description">Un diseño de buena suerte con acabado dorado delicado.</p>
+                <p class="product-price">₡4.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Sección Pulseras -->
+      <section id="PulserasTienda" class="seccion-categoria">
+        <div class="container-tienda">
+          <h2 class="text-center mb-5">Pulseras ✨</h2>
+          <div class="productos-grid">
+            
+            <!-- Producto 1 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/Pulsera.jpg" alt="Pulseras Corazón Dorado Plateado">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera</h2>
+                <p class="product-description">Elegancia y estilo en una pieza encantadora.</p>
+                <p class="product-price">₡3.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+      
+            <!-- Producto 2 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraFlores.jpg" alt="Pulseras lazo chispita plateados">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera de trébol</h2>
+                <p class="product-description">Perfecta para toda ocasión.</p>
+                <p class="product-price">₡4.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+      
+            <!-- Producto 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraCorazonTranspa.jpg" alt="Pulseras trébol negra">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera corazón transparente</h2>
+                <p class="product-description">Un diseño de buena suerte con acabado transparente delicado.</p>
+                <p class="product-price">₡6.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+      
+            <!-- Producto 4 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraColoridaCorazcon.jpg" alt="Pulseras Corazón">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Colorida</h2>
+                <p class="product-description">Un diseño de pulsera colorida.</p>
+                <p class="product-price">₡3.500</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+      
+            <!-- Producto 5 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/JoyeriaPulseraTrebol.png" alt="Pulsera trébol negra">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Trébol Negra</h2>
+                <p class="product-description">Un diseño de buena suerte con acabado dorado delicado.</p>
+                <p class="product-price">₡8.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+      
+            <!-- Producto 6 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/JoyeriaPulseraTrebolRoja.png" alt="Pulsera trébol roja">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Trébol Roja</h2>
+                <p class="product-description">Un diseño de buena suerte con acabado dorado delicado.</p>
+                <p class="product-price">₡8.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+      
+            <!-- Producto 7 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraCuarzoRosa.png" alt="Pulsera Cuarzo Rosa">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Cuarzo Rosa Corazón</h2>
+                <p class="product-description">Un diseño único con cuarzos.</p>
+                <p class="product-price">₡4.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+      
+            <!-- Producto 8 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraPerlasCadena.png" alt="Pulsera Perlas Cadena">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Perlas</h2>
+                <p class="product-description">Un diseño único y elegante.</p>
+                <p class="product-price">₡7.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+      
+            <!-- Producto 9 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraCruz.jpg" alt="Pulsera con Cruz">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera con Cruz</h2>
+                <p class="product-description">Un diseño único de pulsera.</p>
+                <p class="product-price">₡3.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 10 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/Pulseracadenaperlas.png" alt="Pulsera cadena Perlas">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Cadena Perlas</h2>
+                <p class="product-description">Un diseño único de pulsera.</p>
+                <p class="product-price">₡5.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 9 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraMariposaRosa.jpg" alt="Pulsera Rosa Mariposa">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Mariposa Rosa
+                </h2>
+                <p class="product-description">Un diseño único de pulsera.</p>
+                <p class="product-price">₡3.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
+      
+    
+      <!-- Sección Collares -->
+      <section id="CollaresTienda" class="seccion-categoria">
+        <div class="container-tienda">
+          <h2 class="text-center mb-5">Collares📿✨</h2>
+          <div class="productos-grid">
+            <!-- Producto 1 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Collares/CollarColmillo.jpg" alt="Collares Corazón Dorado Plateado">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Collar Colmillo</h2>
+                <p class="product-description">Elegancia y estilo en una pieza encantadora.</p>
+                <p class="product-price">₡4.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 2 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Collares/CollarColorful.jpeg" alt="Collares lazo chispita plateados">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Collar Colorido</h2>
+                <p class="product-description">Perfecto para toda ocasión.</p>
+                <p class="product-price">₡3.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Collares/CollarConchas.jpg" alt="Collares trebol negra">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Collares Conchas</h2>
+                <p class="product-description">Un diseño de buena suerte con acabado trasnparente delicado.</p>
+                <p class="product-price">₡2.800</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 4 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Collares/CollarFlor.jpg" alt="Collares trebol roja">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Collar Girasol</h2>
+                <p class="product-description">Un diseño de Collar giratorio .</p>
+                <p class="product-price">₡11.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 5 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Collares/CollarFlores.jpg" alt="Collar tres Flores">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Collar Tres Flores Amarillas</h2>
+                <p class="product-description">Un diseño de Collar unico de tres flores con significado.</p>
+                <p class="product-price">₡4.500</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Collares/CollarHappyFace.jpg" alt="Collar HappyFace">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Collar Happy Face</h2>
+                <p class="product-description">Un diseño unico parra sonreir.</p>
+                <p class="product-price">₡3.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 7 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Collares/CollarlargoPerlas.png" alt="Collar Largo Perlas">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Collar Largo Perlas</h2>
+                <p class="product-description">Un diseño unico y elegante .</p>
+                <p class="product-price">₡7.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 8 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Collares/CollarMariposa.jpg" alt="Cadena Mariposa Rosa">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Cadena Mariposa</h2>
+                <p class="product-description">Un diseño unico para los amanates de las mariposas.</p>
+                <p class="product-price">₡5.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 9 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Collares/CollarMariposaPerlas.jpg" alt="Collares Mariposa Perlas">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Collar Mariposa Perlas</h2>
+                <p class="product-description">Un diseño unico, elegante.</p>
+                <p class="product-price">₡6.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 10 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Collares/CollarPerlas.jpg" alt="Collar Perlas Madre">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Collar Perlas Madre</h2>
+                <p class="product-description">Un diseño elegante.</p>
+                <p class="product-price">₡12.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 11 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Collares/CollarTranspa.jpg" alt="Collar Transparente">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Collar Transparente</h2>
+                <p class="product-description">Un diseño elegate y discrteto.</p>
+                <p class="product-price">₡5.400</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 12 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Collares/JoyeriaCollarCorazonChispa.png" alt="Collar Corazon Chispa">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Collar Corazon Chispa</h2>
+                <p class="product-description">Un diseño de Collar con Corazon unica.</p>
+                <p class="product-price">₡5.500</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+          
+    
+            <!-- Producto 13 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Collares/CollarCorazon.jpg" alt="Collares Angel Blancos">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Collares con Corazon</h2>
+                <p class="product-description">Un diseño unico de Collar.</p>
+                <p class="product-price">₡5.600</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Seccion Anillos-->
+      <section id="AnillosTienda" class="seccion-categoria">
+        <div class="container-tienda">
+          <h2 class="text-center mb-5">Anillos💍✨</h2>
+          <div class="productos-grid">
+            <!-- Producto 1 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Anillos/AnilloAlambre.png" alt="Anillo Alambre">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Anillo Alambre</h2>
+                <p class="product-description">Elegancia y estilo en una pieza encantadora.</p>
+                <p class="product-price">₡3.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 2 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Anillos/AnilloAlambreFlorDorada.png" alt="Anillo Alambre Flor ">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Anillo Flor Alambre</h2>
+                <p class="product-description">Perfecto para toda ocasión.</p>
+                <p class="product-price">₡3.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Anillos/AnilloAlambrePerlita.png" alt="Anillo Perla">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">
+                Anillo Pelita Alambre
+                </h2>
+                <p class="product-description">Perfecto para toda ocacion.</p>
+                <p class="product-price">₡3.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 4 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Anillos/AnilloPerla.png" alt="Anillo Perla">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Anillo Perla</h2>
+                <p class="product-description">Perfecto para toda ocacion.</p>
+                <p class="product-price">₡3.500</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 5 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Anillos/AnillosCuarzos.png" alt="Anillo Cuarzo">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Anillo Cuarzo</h2>
+                <p class="product-description">Perfecto para toda ocacion.</p>
+                <p class="product-price">₡3.500</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Anillos/Anillo Alambre Corazon.jpg" alt="Anillo Alambre Corazon">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Anillo Alambre Corazon </h2>
+                <p class="product-description">Perfecto para toda ocacion.</p>
+                <p class="product-price">₡3.500</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 7 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Anillos/AnillosPerlas.png" alt="Anillo Perlas ">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Anillos Pelas</h2>
+                <p class="product-description">Perfecto para toda ocacion.</p>
+                <p class="product-price">₡2.600</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+      <!--Seccion Colas-->
+
+      <section id="ColasTienda" class="seccion-categoria">
+        <div class="container-tienda">
+          <h2 class="text-center mb-5">Colas 🎀✨</h2>
+          <div class="productos-grid">
+            <!-- Producto 1 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Colas/ColaAzulconBlanco.jpg" alt="Cola Ocean">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Cola Ocean</h2>
+                <p class="product-description">Un accesorio perfecto para toda ocacion</p>
+                <p class="product-price">₡1.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 2 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Colas/ColaBlanca.jpg" alt="Cola Blanca">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Cola Olaf</h2>
+                <p class="product-description">Perfecto para toda ocasión.</p>
+                <p class="product-price">₡1.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Colas/ColaCafe.jpg" alt="Cola Cafe">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Cola Brownie</h2>
+                <p class="product-description">Un accesorio perfecto para toda ocacion</p>
+                <p class="product-price">₡1.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 4 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Colas/ColaCafeconBlanco.jpg" alt="Cola Chocolate">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Cola Chocolate</h2>
+                <p class="product-description">Un accesorio perfecto para toda ocacion</p>
+                <p class="product-price">₡1.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 5 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Colas/ColaRosaPalo.jpg" alt="Cola Strawberry">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Cola Strawberry</h2>
+                <p class="product-description">Un accesorio perfecto para toda ocacion</p>
+                <p class="product-price">₡1.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Colas/ColaStitch.jpg" alt="Cola Stitch">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Cola Stitch</h2>
+                <p class="product-description">Un accesorio perfecto para toda ocacion</p>
+                <p class="product-price">₡1.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 7 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Colas/ColaColorMenta.jpg" alt="Cola Sky">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Cola Sky</h2>
+                <p class="product-description">Un diseño unico de Collar.</p>
+                <p class="product-price">₡1.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!--=Seccion Prensas-->
+      <section id="PrensasTienda" class="seccion-categoria">
+        <div class="container-tienda">
+          <h2 class="text-center mb-5">Prensas 🎀💖✨</h2>
+          <div class="productos-grid">
+            <!-- Producto 1 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Prensas/PrensaCafe.png" alt="Prensa Cafe Grande">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Prensa Cafe Grande</h2>
+                <p class="product-description">Elegancia y estilo en una pieza encantadora.</p>
+                <p class="product-price">₡1.200</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 2 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Prensas/PrensaDorada.png" alt="Prensa Dorada ">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Prensa Dorada Mediana </h2>
+                <p class="product-description">Elegancia y estilo en una pieza encantadora.</p>
+                <p class="product-price">₡1.200</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Prensas/PrensaFlorNegra.png " alt="Prensa Playera Negra">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Prensa Playera Negra</h2>
+                <p class="product-description">Elegancia y estilo en una pieza encantadora.</p>
+                <p class="product-price">₡1.200</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 4 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Prensas/PrensaFlorRosada.png" alt="Prensa Flor Rosada">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Prensa Flor Rosada</h2>
+                <p class="product-description">Elegancia y estilo en una pieza encantadora.</p>
+                <p class="product-price">₡1.200</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+             <!-- Producto 5 -->
+             <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Prensas/PrensaFlorRosada2.png" alt="Prensa Playera Rosada">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Prensa Playera Rosada</h2>
+                <p class="product-description">Elegancia y estilo en una pieza encantadora.</p>
+                <p class="product-price">₡1.200</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Prensas/PrensaFlorVino.png" alt="Prensa Playera Vino">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Prensa Playera Vino</h2>
+                <p class="product-description">Elegancia y estilo en una pieza encantadora.</p>
+                <p class="product-price">₡1.200</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 7 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Prensas/PrensaNegra.png" alt="Prensa Negra Grnde">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Prensa Negra Grande</h2>
+                <p class="product-description">Elegancia y estilo en una pieza encantadora.</p>
+                <p class="product-price">₡1.200</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 8 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Prensas/PrensaPerlas.png" alt="Prensa Perlas">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Prensa Perlas</h2>
+                <p class="product-description">Elegancia y estilo en una pieza encantadora.</p>
+                <p class="product-price">₡1.200</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 9 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Prensas/PrensaPerlasdorada.png" alt="Prensa Perlas Dorada">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Prensa Perlas Dorada</h2>
+                <p class="product-description">Elegancia y estilo en una pieza encantadora.</p>
+                <p class="product-price">₡1.200</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 10 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Prensas/PrensasPeluche.png" alt="Prensa Peluche">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Prensas Peluche Corazon</h2>
+                <p class="product-description">Elegancia y estilo en una pieza encantadora.</p>
+                <p class="product-price">₡1.200</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            <!-- Producto 11 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Prensas/PrensaRosa.png" alt="Prensa Rosa pequeña">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Prensa Rosa pequeña</h2>
+                <p class="product-description">Elegancia y estilo en una pieza encantadora.</p>
+                <p class="product-price">₡1.200</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+        
+    
+            <!-- Producto 12 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Prensas/PrensasPeluche2.png" alt="Prensas Peluche Grandes">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Prensas Peluche Grandes</h2>
+                <p class="product-description">Un diseño unico de Collar.</p>
+                <p class="product-price">₡2.600</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <!--Seccion Pulseras Tejidas-->
+      <section id="PulserasTejidasTienda" class="seccion-categoria">
+        <div class="container-tienda">
+          <h2 class="text-center mb-5">Pulseras Tejidas🧵🧶✨</h2>
+          <div class="productos-grid">
+            <!-- Producto 1 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraRojaInfinito.jpg" alt="Pulsera Tejida Infinito">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulseras Tejidas Infinito</h2>
+                <p class="product-description">Elegancia y estilo en una pieza encantadora.</p>
+                <p class="product-price">₡2.500</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 2 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraJesus.jpg" alt="Pulsera Jesus">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Jesus</h2>
+                <p class="product-description">Perfecto para toda ocasión.</p>
+                <p class="product-price">₡1.500</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraJesusLovesMe.jpg" alt="Pulsera Jesus Love Me">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Jesus Love Me</h2>
+                <p class="product-description">Un diseño de buena suerte con acabado trasnparente delicado.</p>
+                <p class="product-price">₡2.800</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 4 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraWWDD.jpg" alt="Pulsera WWJD">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera WWJD</h2>
+                <p class="product-description">Un diseño unico.</p>
+                <p class="product-price">₡1.200</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+             <!-- Producto 5 -->
+             <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulserasAlFinito.jpg" alt="Pulsera Toys Story">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Al Infinito y mas alla</h2>
+                <p class="product-description">Un diseño unico.</p>
+                <p class="product-price">₡2.500</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+             <!-- Producto 6 -->
+             <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraTejidaHombreNegra.png" alt="Pulsera Negra">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Negra</h2>
+                <p class="product-description">Un diseño unico.</p>
+                <p class="product-price">₡1.500</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+             <!-- Producto 7 -->
+             <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulserasTejidasStitch.jpg" alt="Pulsera Stitch">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Estilocon Tematica</h2>
+                <p class="product-description">Un diseño unico.</p>
+                <p class="product-price">₡2.500</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+             <!-- Producto 8 -->
+             <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraTejidaChicasSuperpoderosas.jpg" alt="Pulsera Chicas Superpoderosas">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulseras Chicas Super Poderosas</h2>
+                <p class="product-description">Un diseño unico.</p>
+                <p class="product-price">₡5.400</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+             <!-- Producto 9 -->
+             <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraNegra3Perlas.jpg" alt="PulseraNegra">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Negra Perlas</h2>
+                <p class="product-description">Un diseño de Collar con Flor unica.</p>
+                <p class="product-price">₡1.500</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+            
+    
+            <!-- Producto 10 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulserastejidasLavaFuego.jpg" alt="Pulsera Elementos">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Elementos</h2>
+                <p class="product-description">Un diseño unico de Collar.</p>
+                <p class="product-price">₡2.500</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <!--Seccion Pulseras para Hombres-->
+      <section id="PulserasHombreTienda" class="seccion-categoria">
+        <div class="container-tienda">
+          <h2 class="text-center mb-5">Pulseras para Hombres💪✨</h2>
+          <div class="productos-grid">
+            <!-- Producto 1 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraHombre.jpg" alt="Pulseras Hombre">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulseras Hombre Cuero</h2>
+                <p class="product-description">Un diseño unico.</p>
+                <p class="product-price">₡2.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 2 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraCueroNegra2.png" alt="Pulsera Negra Cuero">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Negra Cuero</h2>
+                <p class="product-description">Un diseño unico.</p>
+                <p class="product-price">₡3.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 3 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraCruzVerde.png" alt="Pulsera Cruz Verde">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Cruz</h2>
+                <p class="product-description">Un diseño unico.</p>
+                <p class="product-price">₡3.000</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 4 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraHombreCruz.png" alt="Pulsera Cuero Cruz">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Cuero Cruz Negra</h2>
+                <p class="product-description">Un diseño unico.</p>
+                <p class="product-price">₡4.500</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+             <!-- Producto 5 -->
+             <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraHombrePluma.png" alt="Pulsera Negra Pluma">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera Pluma Negra</h2>
+                <p class="product-description">Un diseño unico.</p>
+                <p class="product-price">₡4.500</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+    
+            <!-- Producto 6 -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="Imagenes/Fotos/Pulseras/PulseraHombreNegra3.png" alt="Pulsera Perlas negras">
+              </div>
+              <div class="product-details">
+                <h2 class="product-title">Pulsera perlas negras</h2>
+                <p class="product-description">Un diseño unico de Collar.</p>
+                <p class="product-price">₡2.600</p>
+                <button class="add-to-cart">Agregar a la bolsa</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </section>
+   
+  </div>
+    
+
+  </main>
+
+  <footer id="footer" style="background-color: #c8a2c8; color: white;" class="pt-5 pb-4">
+    <div class="container">
+      <div class="row gy-4">
+  
+        <!-- Logo y contacto -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="text-uppercase mb-3 text-white">Prisutería Accesorios</h5> <!-- Asegurado en blanco -->
+          <p><strong>Atención al cliente:</strong></p>
+          <p class="small">Nuestro equipo está disponible de lunes a sábado de 9:00am a 6:00pm.</p>
+  
+          <!-- Redes Sociales -->
+          <div class="mt-3">
+            <a href="https://www.facebook.com/prisuteriaaccesorioscr" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/prisuteria_accesorioscr/" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.tiktok.com/@prisuteria_accesorioscr" class="text-white me-3 fs-5"><i class="bi bi-tiktok"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=50671914947&text&type=phone_number&app_absent=0" class="text-white fs-5"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+  
+   <!-- Enlaces -->
+   <div class="col-lg-4 col-md-6">
+    <h5 class="text-uppercase mb-3 text-white">Enlaces Rápidos</h5> <!-- Asegurado en blanco -->
+    <ul class="list-unstyled">
+      <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+      <li><a href="acerca.html" class="text-white text-decoration-none">Acerca de Nosotros</a></li>
+      <li><a href="tienda.html" class="text-white text-decoration-none">Tienda</a></li>
+      <li><a href="contacto.html" class="text-white text-decoration-none">Contáctanos</a></li>
+      <li><a href="autores.html" class="text-white text-decoration-none">Autores</a></li>
+    </ul>
+  </div>
+  
+        <!-- Agradecimiento -->
+        <div class="col-lg-4 col-md-12">
+          <h5 class="text-uppercase mb-3 text-white">¡Gracias!</h5>
+          <p>Gracias por ser parte de nuestra historia y por elegirnos como tu tienda de moda.</p>
+        </div>
+  
+      </div> 
+      <!-- Derechos -->
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 <strong class="text-white">Proyecto UTN</strong>. Todos los derechos reservados.</p>
+        <small>Diseñado por <a href="#" class="text-white text-decoration-underline">Priscilla & Nicole</a></small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Caja contacto WH-->
+  <a href="https://wa.me/50671914947" target="_blank" id="whatsapp-button" class="whatsapp-button d-flex align-items-center justify-content-center">
+    <img src="Imagenes/Iconos/IconoWHScroll.png" alt="WhatsApp" width="50" height="50"></a>
+
+  <!-- es útil si tu sitio tiene muchos recursos (imágenes, scripts, etc.) y puede tardar en mostrar todo. Mejora la experiencia visual del usuario. -->
+  <div id="preloader"></div>
+
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
+  <script src="js/bolsacompras.js"></script>
+
+</body>
+
+</html>
